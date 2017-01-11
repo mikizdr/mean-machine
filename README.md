@@ -1,4 +1,4 @@
-# mean-machine
+# MEAN machine
 <h2>WhyMEAN?</h2>
 
 The MEAN stack uses four pieces of software: MongoDB, ExpressJS, AngularJS, and NodeJS. Using thesefourtoolstogetherletsdeveloperscreateefficient,wellorganized,andinteractiveapplications quickly.
