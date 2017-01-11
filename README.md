@@ -5,10 +5,10 @@ The MEAN stack uses four pieces of software: MongoDB, ExpressJS, AngularJS, and 
 
 Since every component of the stack uses JavaScript, you can glide through your web development code seamlessly. Using all JavaScript lets us do some great things like:
 <ul>
-<li>• Use JavaScript on the server-side (Node and Express)</li>
-<li>• Use JavaScript on the client-side (Angular)</li>
-<li>• Store JSON objects in MongoDB</li>
-<li>• Use JSON objects to transfer data easily from database to server to client</li>
+<li>Use JavaScript on the server-side (Node and Express)</li>
+<li>Use JavaScript on the client-side (Angular)</li>
+<li>Store JSON objects in MongoDB</li>
+<li>Use JSON objects to transfer data easily from database to server to client</li>
 </ul>
 A single language across your entire stack increases productivity. Even client side developers that work in Angular can easily understand most of the code on the server side.
 
