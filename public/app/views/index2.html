@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<title>My First Angular Application</title>
+
+	<!-- CSS -->
+	<!-- load bootstrap and our stylesheet -->
+	<link rel="stylesheet" href="../../assets/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/libs/font-awesome.min.css">
+	<link rel="stylesheet" href="../../assets/libs/animate.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+
+	<!-- JS -->
+	<!-- load angular and angular-route -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/angular-animate.js"></script
+
+
+    <!-- load our custom app files -->
+    <script src="js/app.js"></script>
+    <script src="js/app.route.js"></script>
+
+</head>
+<body class="container" ng-app="routerApp" ng-controller="mainController as main">
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">Angular Routing Example</a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+				<li><a href="/about"><i class="fa fa-shield"></i> About</a></li>
+				<li><a href="/contact"><i class="fa fa-comment"></i> Contact</a></li>
+			</ul>
+		</nav>
+	
+	<!-- MAIN CONTENT AND INJECTED VIEWS -->
+	<main>
+		<div class="jumbotron text-center blue">
+			<h1>{{ main.bigMessage }}</h1>
+		</div>
+		
+
+		<!-- angular templating will go here -->
+		<!-- this is where content will be injected -->
+		<div id="content-views">
+			<div ng-view></div>
+		</div>
+
+	</main>
+
+</body>
+</html>
