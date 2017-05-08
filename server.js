@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(function(req, res, next) {
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
-	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
+	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization');
 	next();
 });
 
@@ -55,4 +55,4 @@ app.get('*', function(req, res) {
 // START THE SERVER
 // =============================================================================
 app.listen(config.port);
-console.log('Magic happens on port ' + config.port);
+console.log('Go to localhost:' + config.port);

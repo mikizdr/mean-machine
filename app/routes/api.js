@@ -61,7 +61,7 @@ module.exports = function(app, express) {
     // route middleware to verify a token
     apiRouter.use(function(req, res, next) {
         // do logging
-        console.log('Somebody just came to our app!');
+        console.log('You are passed through middleware!');
 
     // check header or url parameters or post parameters for token
     var token = req.body.token || req.query.token || req.headers['x-access-token'];
@@ -95,7 +95,7 @@ module.exports = function(app, express) {
     // test route to make sure everything is working
     // accessed at GET http://localhost:8080/api
     apiRouter.get('/', function(req, res) {
-        res.json({ message: 'hooray! welcome to our api!' });
+        res.json({ message: 'Welcome to tha MEAN app!' });
     });
 
     // on routes that end in /users
@@ -165,7 +165,7 @@ module.exports = function(app, express) {
                     if (err) res.send(err);
 
                     // return a message
-                    res.json({ message: 'User updated!' });
+                    res.json({ message: 'The user successfully updated!' });
                 });
 
             });
@@ -178,7 +178,7 @@ module.exports = function(app, express) {
             }, function(err, user) {
                 if (err) res.send(err);
 
-                res.json({ message: 'Successfully deleted' });
+                res.json({ message: 'The user successfully deleted' });
             });
         });
     return apiRouter;    
